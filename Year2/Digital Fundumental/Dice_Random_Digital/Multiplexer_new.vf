@@ -1,0 +1,94 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Multiplexer_new.vf
+// /___/   /\     Timestamp : 10/19/2020 22:25:59
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "D:/Computer Engineering/Year2/Digital Fundumental/Dice_Random_Digital/Multiplexer_new.vf" -w "D:/Computer Engineering/Year2/Digital Fundumental/Dice_Random_Digital/Multiplexer_new.sch"
+//Design Name: Multiplexer_new
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module M2_1_HXILINX_Multiplexer_new (O, D0, D1, S0);
+    
+
+   output O;
+
+   input  D0;
+   input  D1;
+   input  S0;
+
+   reg O;
+
+   always @ ( D0 or D1 or S0)
+   begin
+      case(S0)
+      1'b0 : O <= D0;
+      1'b1 : O <= D1;
+      endcase
+   end
+    
+endmodule
+`timescale 1ns / 1ps
+
+module Multiplexer_new(C1_B1, 
+                       C1_B2, 
+                       C1_B3, 
+                       C1_B4, 
+                       C2_B1, 
+                       C2_B2, 
+                       C2_B3, 
+                       C2_B4, 
+                       OSC_DIV, 
+                       TO_BCD1, 
+                       TO_BCD2, 
+                       TO_BCD3, 
+                       TO_BCD4);
+
+    input C1_B1;
+    input C1_B2;
+    input C1_B3;
+    input C1_B4;
+    input C2_B1;
+    input C2_B2;
+    input C2_B3;
+    input C2_B4;
+    input OSC_DIV;
+   output TO_BCD1;
+   output TO_BCD2;
+   output TO_BCD3;
+   output TO_BCD4;
+   
+   
+   (* HU_SET = "XLXI_1_16" *) 
+   M2_1_HXILINX_Multiplexer_new  XLXI_1 (.D0(C1_B1), 
+                                        .D1(C2_B1), 
+                                        .S0(OSC_DIV), 
+                                        .O(TO_BCD1));
+   (* HU_SET = "XLXI_2_17" *) 
+   M2_1_HXILINX_Multiplexer_new  XLXI_2 (.D0(C1_B2), 
+                                        .D1(C2_B2), 
+                                        .S0(OSC_DIV), 
+                                        .O(TO_BCD2));
+   (* HU_SET = "XLXI_3_18" *) 
+   M2_1_HXILINX_Multiplexer_new  XLXI_3 (.D0(C1_B3), 
+                                        .D1(C2_B3), 
+                                        .S0(OSC_DIV), 
+                                        .O(TO_BCD3));
+   (* HU_SET = "XLXI_4_19" *) 
+   M2_1_HXILINX_Multiplexer_new  XLXI_4 (.D0(C1_B4), 
+                                        .D1(C2_B4), 
+                                        .S0(OSC_DIV), 
+                                        .O(TO_BCD4));
+endmodule

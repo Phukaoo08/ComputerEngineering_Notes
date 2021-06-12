@@ -1,0 +1,3 @@
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/Computer Engineering/Year2/Digital Fundumental/ALU/ALU.vf,-w,D:/Computer Engineering/Year2/Digital Fundumental/ALU/ALU.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/Computer Engineering/Year2/Digital Fundumental/ALU/DividerBy2.vf,-w,D:/Computer Engineering/Year2/Digital Fundumental/adder/adder/DividerBy2.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/Computer Engineering/Year2/Digital Fundumental/ALU/ALU.vf,-w,D:/Computer Engineering/Year2/Digital Fundumental/ALU/ALU.sch

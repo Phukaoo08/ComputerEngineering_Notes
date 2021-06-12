@@ -1,0 +1,6 @@
+add instance compare 768 1104 R0 -sn=1
+undo
+add instance fdce 736 1568 R0 -sn=1
+undo
+add instance ftp 1872 1760 R0 -sn=1
+undo

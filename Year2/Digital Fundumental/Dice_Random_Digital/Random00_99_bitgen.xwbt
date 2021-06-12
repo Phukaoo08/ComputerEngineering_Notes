@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Computer Engineering\Year2\Digital Fundumental\Dice_Random_Digital\Random00_99.ncd
+OUTFILE=D:\Computer Engineering\Year2\Digital Fundumental\Dice_Random_Digital\Random00_99.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=D:\Computer Engineering\Year2\Digital Fundumental\Dice_Random_Digital
+LICENSE=WebPack
+USER_INFO=__0_0_0

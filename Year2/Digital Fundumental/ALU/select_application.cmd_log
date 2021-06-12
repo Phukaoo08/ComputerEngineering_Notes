@@ -1,0 +1,7 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym select_application E:/digit_program/project/ALU/select_application.sch E:/digit_program/project/ALU/select_application.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog select_application_drc.vf -w E:/digit_program/project/ALU/select_application.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog select_application_drc.vf -w E:/digit_program/project/ALU/select_application.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog select_application_drc.vf -w E:/digit_program/project/ALU/select_application.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog select_application_drc.vf -w E:/digit_program/project/ALU/select_application.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog select_application_drc.vf -w E:/digit_program/project/ALU/select_application.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym select_application E:/digit_program/project/ALU/select_application.sch E:/digit_program/project/ALU/select_application.sym 

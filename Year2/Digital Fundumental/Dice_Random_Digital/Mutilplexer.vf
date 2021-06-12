@@ -1,0 +1,68 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Mutilplexer.vf
+// /___/   /\     Timestamp : 10/19/2020 22:06:44
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "D:/Computer Engineering/Year2/Digital Fundumental/Dice_Random_Digital/Mutilplexer.vf" -w "D:/Computer Engineering/Year2/Digital Fundumental/Dice_Random_Digital/Mutilplexer.sch"
+//Design Name: Mutilplexer
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Mutilplexer(Counter1_bit1, 
+                   Counter1_bit2, 
+                   Counter1_bit3, 
+                   Counter1_bit4, 
+                   Counter2_bit1, 
+                   Counter2_bit2, 
+                   Counter2_bit3, 
+                   Counter2_bit4, 
+                   OSC_DIV, 
+                   TO_BCD_1, 
+                   TO_BCD_2, 
+                   TO_BCD_3, 
+                   TO_BCD_4);
+
+    input Counter1_bit1;
+    input Counter1_bit2;
+    input Counter1_bit3;
+    input Counter1_bit4;
+    input Counter2_bit1;
+    input Counter2_bit2;
+    input Counter2_bit3;
+    input Counter2_bit4;
+    input OSC_DIV;
+   output TO_BCD_1;
+   output TO_BCD_2;
+   output TO_BCD_3;
+   output TO_BCD_4;
+   
+   
+   MUXF5_L  XLXI_1 (.I0(Counter1_bit1), 
+                   .I1(Counter2_bit1), 
+                   .S(OSC_DIV), 
+                   .LO(TO_BCD_1));
+   MUXF5_L  XLXI_2 (.I0(Counter1_bit2), 
+                   .I1(Counter2_bit2), 
+                   .S(OSC_DIV), 
+                   .LO(TO_BCD_2));
+   MUXF5_L  XLXI_3 (.I0(Counter1_bit3), 
+                   .I1(Counter2_bit3), 
+                   .S(OSC_DIV), 
+                   .LO(TO_BCD_3));
+   MUXF5_L  XLXI_4 (.I0(Counter1_bit4), 
+                   .I1(Counter2_bit4), 
+                   .S(OSC_DIV), 
+                   .LO(TO_BCD_4));
+endmodule

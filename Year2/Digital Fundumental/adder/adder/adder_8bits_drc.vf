@@ -1,0 +1,125 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : adder_8bits_drc.vf
+// /___/   /\     Timestamp : 10/28/2020 01:48:01
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: E:\digit_program\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan6 -verilog adder_8bits_drc.vf -w E:/digit_program/project/adder/adder_8bits.sch
+//Design Name: adder_8bits
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Fulladder_MUSER_adder_8bits(A, 
+                                   B, 
+                                   Cin, 
+                                   Cout, 
+                                   S);
+
+    input A;
+    input B;
+    input Cin;
+   output Cout;
+   output S;
+   
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_8;
+   
+   XOR2  XLXI_1 (.I0(B), 
+                .I1(A), 
+                .O(XLXN_8));
+   XOR2  XLXI_2 (.I0(Cin), 
+                .I1(XLXN_8), 
+                .O(S));
+   AND2  XLXI_3 (.I0(XLXN_8), 
+                .I1(Cin), 
+                .O(XLXN_2));
+   AND2  XLXI_4 (.I0(A), 
+                .I1(B), 
+                .O(XLXN_3));
+   OR2  XLXI_5 (.I0(XLXN_3), 
+               .I1(XLXN_2), 
+               .O(Cout));
+endmodule
+`timescale 1ns / 1ps
+
+module Adder_MUSER_adder_8bits(data, 
+                               Cout, 
+                               sum);
+
+    input [15:0] data;
+   output Cout;
+   output [7:0] sum;
+   
+   wire XLXN_4;
+   wire XLXN_28;
+   wire XLXN_38;
+   wire XLXN_39;
+   wire XLXN_40;
+   wire XLXN_42;
+   wire XLXN_43;
+   wire XLXN_44;
+   
+   Fulladder_MUSER_adder_8bits  XLXI_1 (.A(data[0]), 
+                                       .B(data[8]), 
+                                       .Cin(XLXN_4), 
+                                       .Cout(XLXN_38), 
+                                       .S(sum[0]));
+   Fulladder_MUSER_adder_8bits  XLXI_17 (.A(data[1]), 
+                                        .B(data[9]), 
+                                        .Cin(XLXN_38), 
+                                        .Cout(XLXN_39), 
+                                        .S(sum[1]));
+   Fulladder_MUSER_adder_8bits  XLXI_18 (.A(data[2]), 
+                                        .B(data[10]), 
+                                        .Cin(XLXN_39), 
+                                        .Cout(XLXN_40), 
+                                        .S(sum[2]));
+   Fulladder_MUSER_adder_8bits  XLXI_19 (.A(data[3]), 
+                                        .B(data[11]), 
+                                        .Cin(XLXN_40), 
+                                        .Cout(XLXN_28), 
+                                        .S(sum[3]));
+   Fulladder_MUSER_adder_8bits  XLXI_22 (.A(data[4]), 
+                                        .B(data[12]), 
+                                        .Cin(XLXN_28), 
+                                        .Cout(XLXN_42), 
+                                        .S(sum[4]));
+   Fulladder_MUSER_adder_8bits  XLXI_23 (.A(data[6]), 
+                                        .B(data[14]), 
+                                        .Cin(XLXN_43), 
+                                        .Cout(XLXN_44), 
+                                        .S(sum[6]));
+   Fulladder_MUSER_adder_8bits  XLXI_24 (.A(data[5]), 
+                                        .B(data[13]), 
+                                        .Cin(XLXN_42), 
+                                        .Cout(XLXN_43), 
+                                        .S(sum[5]));
+   Fulladder_MUSER_adder_8bits  XLXI_25 (.A(data[7]), 
+                                        .B(data[15]), 
+                                        .Cin(XLXN_44), 
+                                        .Cout(Cout), 
+                                        .S(sum[7]));
+endmodule
+`timescale 1ns / 1ps
+
+module adder_8bits(data_in);
+
+    input [15:0] data_in;
+   
+   
+   Adder_MUSER_adder_8bits  XLXI_1 (.data(data_in[15:0]), 
+                                   .Cout(), 
+                                   .sum());
+endmodule

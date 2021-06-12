@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym Counter_kongjing {D:/Computer Engineering/Year2/Digital Fundumental/Dice_Random_Digital/Counter_kongjing.sch} {D:/Computer Engineering/Year2/Digital Fundumental/Dice_Random_Digital/Counter_kongjing.sym} 
+sch2sym -intstyle ise -family spartan6 -w -refsym Counter_kongjing {D:/Computer Engineering/Year2/Digital Fundumental/Dice_Random_Digital/Counter_kongjing.sch} {D:/Computer Engineering/Year2/Digital Fundumental/Dice_Random_Digital/Counter_kongjing.sym} 

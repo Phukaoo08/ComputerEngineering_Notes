@@ -1,0 +1,77 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Compare_fix.vf
+// /___/   /\     Timestamp : 10/19/2020 22:06:44
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "D:/Computer Engineering/Year2/Digital Fundumental/Dice_Random_Digital/Compare_fix.vf" -w "D:/Computer Engineering/Year2/Digital Fundumental/Dice_Random_Digital/Compare_fix.sch"
+//Design Name: Compare_fix
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Compare_fix(C1_1, 
+                   C1_2, 
+                   C1_3, 
+                   C1_4, 
+                   C2_1, 
+                   C2_2, 
+                   C2_3, 
+                   C2_4, 
+                   TO_BUZZER);
+
+    input C1_1;
+    input C1_2;
+    input C1_3;
+    input C1_4;
+    input C2_1;
+    input C2_2;
+    input C2_3;
+    input C2_4;
+   output TO_BUZZER;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   
+   XOR2  XLXI_1 (.I0(C2_1), 
+                .I1(C1_1), 
+                .O(XLXN_1));
+   XOR2  XLXI_2 (.I0(C2_2), 
+                .I1(C1_2), 
+                .O(XLXN_2));
+   XOR2  XLXI_3 (.I0(C2_3), 
+                .I1(C1_3), 
+                .O(XLXN_3));
+   XOR2  XLXI_4 (.I0(C2_4), 
+                .I1(C1_4), 
+                .O(XLXN_4));
+   INV  XLXI_5 (.I(XLXN_1), 
+               .O(XLXN_6));
+   INV  XLXI_6 (.I(XLXN_2), 
+               .O(XLXN_7));
+   INV  XLXI_7 (.I(XLXN_3), 
+               .O(XLXN_8));
+   INV  XLXI_8 (.I(XLXN_4), 
+               .O(XLXN_9));
+   AND4  XLXI_9 (.I0(XLXN_9), 
+                .I1(XLXN_8), 
+                .I2(XLXN_7), 
+                .I3(XLXN_6), 
+                .O(TO_BUZZER));
+endmodule

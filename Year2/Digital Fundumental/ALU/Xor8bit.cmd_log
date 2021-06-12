@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym Xor8bit E:/digit_program/project/ALU/Xor8bit.sch E:/digit_program/project/ALU/Xor8bit.sym 

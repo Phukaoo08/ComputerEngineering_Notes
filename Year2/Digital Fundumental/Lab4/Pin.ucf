@@ -1,0 +1,9 @@
+NET "a" LOC = P41;
+NET "b" LOC = P40;
+NET "c" LOC = P35;
+NET "d" LOC = P34;
+NET "e" LOC = P32;
+NET "f" LOC = P29;
+NET "g" LOC = P27;
+NET "Common0" LOC = P44;
+NET "CLOCK" LOC = P55;

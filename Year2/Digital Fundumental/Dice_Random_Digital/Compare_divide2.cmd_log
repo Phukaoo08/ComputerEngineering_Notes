@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym Compare_divide2 {D:/Computer Engineering/Year2/Digital Fundumental/Dice_Random_Digital/Compare_divide2.sch} {D:/Computer Engineering/Year2/Digital Fundumental/Dice_Random_Digital/Compare_divide2.sym} 
+sch2sym -intstyle ise -family spartan6 -w -refsym Compare_divide2 {D:/Computer Engineering/Year2/Digital Fundumental/Dice_Random_Digital/Compare_divide2.sch} {D:/Computer Engineering/Year2/Digital Fundumental/Dice_Random_Digital/Compare_divide2.sym} 

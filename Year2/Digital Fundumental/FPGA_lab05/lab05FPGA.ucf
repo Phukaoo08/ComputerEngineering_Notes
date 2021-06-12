@@ -1,0 +1,8 @@
+
+
+NET "Switch_H" LOC = P55;
+NET "Switch_S" LOC = P56;
+NET "Output" LOC = P83;
+NET "Switch_B" LOC = P57;
+NET "Switch_D" LOC = P58;
+NET "Switch_E" LOC = P59;

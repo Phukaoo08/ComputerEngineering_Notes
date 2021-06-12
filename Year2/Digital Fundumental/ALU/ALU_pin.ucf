@@ -1,0 +1,40 @@
+//Slide sw
+net "A_in(7)" loc = p55;
+net "A_in(6)" loc = p56;
+net "A_in(5)" loc = p57;
+net "A_in(4)" loc = p58;
+net "A_in(3)" loc = p59;
+net "A_in(2)" loc = p61;
+net "A_in(1)" loc = p62;
+net "A_in(0)" loc = p66;
+
+//Dip sw
+net "B_in(7)" loc = p112;
+net "B_in(6)" loc = p111;
+net "B_in(5)" loc = p105;
+net "B_in(4)" loc = p104;
+net "B_in(3)" loc = p102;
+net "B_in(2)" loc = p101;
+net "B_in(1)" loc = p100;
+net "B_in(0)" loc = p99;
+
+// 7 Segment
+net "A" loc = p41;
+net "B" loc = p40;
+net "C" loc = p35;
+net "D" loc = p34;
+net "E" loc = p32;
+net "F" loc = p29;
+net "G" loc = p27;
+
+// 7 Segment Common
+net "com0" loc = p44;
+net "com1" loc = p43;
+net "com2" loc = p33;
+net "com3" loc = p30;
+
+//CLK 20 MHz
+net "clk20MHz" loc = p123;
+
+//Select SW
+net "Select_SW" loc = p45;

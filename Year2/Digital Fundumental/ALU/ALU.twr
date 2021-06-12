@@ -1,0 +1,193 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml ALU.twx ALU.ncd -o ALU.twr ALU.pcf -ucf ALU_pin.ucf
+
+Design file:              ALU.ncd
+Physical constraint file: ALU.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock Select_SW to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+A           |        18.191(R)|      SLOW  |         7.785(R)|      FAST  |Select_SW_BUFGP   |   0.000|
+B           |        18.716(R)|      SLOW  |         7.920(R)|      FAST  |Select_SW_BUFGP   |   0.000|
+C           |        18.827(R)|      SLOW  |         7.758(R)|      FAST  |Select_SW_BUFGP   |   0.000|
+D           |        18.751(R)|      SLOW  |         8.001(R)|      FAST  |Select_SW_BUFGP   |   0.000|
+E           |        18.706(R)|      SLOW  |         7.689(R)|      FAST  |Select_SW_BUFGP   |   0.000|
+F           |        18.025(R)|      SLOW  |         7.456(R)|      FAST  |Select_SW_BUFGP   |   0.000|
+G           |        17.872(R)|      SLOW  |         7.182(R)|      FAST  |Select_SW_BUFGP   |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock Select_SW
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Select_SW      |    1.227|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk20MHz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk20MHz       |    0.886|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A_in<0>        |A              |   15.333|
+A_in<0>        |B              |   15.856|
+A_in<0>        |C              |   15.969|
+A_in<0>        |D              |   15.893|
+A_in<0>        |E              |   15.848|
+A_in<0>        |F              |   15.167|
+A_in<0>        |G              |   15.014|
+A_in<1>        |A              |   15.540|
+A_in<1>        |B              |   16.063|
+A_in<1>        |C              |   16.176|
+A_in<1>        |D              |   16.100|
+A_in<1>        |E              |   16.055|
+A_in<1>        |F              |   15.374|
+A_in<1>        |G              |   15.221|
+A_in<2>        |A              |   15.188|
+A_in<2>        |B              |   15.777|
+A_in<2>        |C              |   15.824|
+A_in<2>        |D              |   15.748|
+A_in<2>        |E              |   15.760|
+A_in<2>        |F              |   15.081|
+A_in<2>        |G              |   14.926|
+A_in<3>        |A              |   14.599|
+A_in<3>        |B              |   15.188|
+A_in<3>        |C              |   15.235|
+A_in<3>        |D              |   15.159|
+A_in<3>        |E              |   15.114|
+A_in<3>        |F              |   14.362|
+A_in<3>        |G              |   14.280|
+A_in<4>        |A              |   14.815|
+A_in<4>        |B              |   15.404|
+A_in<4>        |C              |   15.451|
+A_in<4>        |D              |   15.375|
+A_in<4>        |E              |   15.330|
+A_in<4>        |F              |   14.578|
+A_in<4>        |G              |   14.496|
+A_in<5>        |A              |   14.753|
+A_in<5>        |B              |   15.342|
+A_in<5>        |C              |   15.389|
+A_in<5>        |D              |   15.313|
+A_in<5>        |E              |   15.268|
+A_in<5>        |F              |   14.516|
+A_in<5>        |G              |   14.434|
+A_in<6>        |A              |   14.402|
+A_in<6>        |B              |   15.010|
+A_in<6>        |C              |   14.933|
+A_in<6>        |D              |   14.895|
+A_in<6>        |E              |   15.000|
+A_in<6>        |F              |   14.321|
+A_in<6>        |G              |   14.166|
+A_in<7>        |A              |   14.347|
+A_in<7>        |B              |   14.955|
+A_in<7>        |C              |   14.878|
+A_in<7>        |D              |   14.840|
+A_in<7>        |E              |   14.945|
+A_in<7>        |F              |   14.266|
+A_in<7>        |G              |   14.111|
+B_in<0>        |A              |   15.919|
+B_in<0>        |B              |   16.442|
+B_in<0>        |C              |   16.555|
+B_in<0>        |D              |   16.479|
+B_in<0>        |E              |   16.434|
+B_in<0>        |F              |   15.753|
+B_in<0>        |G              |   15.600|
+B_in<1>        |A              |   15.613|
+B_in<1>        |B              |   16.136|
+B_in<1>        |C              |   16.249|
+B_in<1>        |D              |   16.173|
+B_in<1>        |E              |   16.128|
+B_in<1>        |F              |   15.447|
+B_in<1>        |G              |   15.294|
+B_in<2>        |A              |   15.386|
+B_in<2>        |B              |   15.975|
+B_in<2>        |C              |   16.022|
+B_in<2>        |D              |   15.946|
+B_in<2>        |E              |   15.958|
+B_in<2>        |F              |   15.279|
+B_in<2>        |G              |   15.124|
+B_in<3>        |A              |   15.525|
+B_in<3>        |B              |   16.114|
+B_in<3>        |C              |   16.161|
+B_in<3>        |D              |   16.085|
+B_in<3>        |E              |   16.040|
+B_in<3>        |F              |   15.288|
+B_in<3>        |G              |   15.206|
+B_in<4>        |A              |   15.711|
+B_in<4>        |B              |   16.300|
+B_in<4>        |C              |   16.347|
+B_in<4>        |D              |   16.271|
+B_in<4>        |E              |   16.226|
+B_in<4>        |F              |   15.474|
+B_in<4>        |G              |   15.392|
+B_in<5>        |A              |   15.162|
+B_in<5>        |B              |   15.751|
+B_in<5>        |C              |   15.798|
+B_in<5>        |D              |   15.722|
+B_in<5>        |E              |   15.677|
+B_in<5>        |F              |   14.925|
+B_in<5>        |G              |   14.843|
+B_in<6>        |A              |   15.074|
+B_in<6>        |B              |   15.682|
+B_in<6>        |C              |   15.605|
+B_in<6>        |D              |   15.567|
+B_in<6>        |E              |   15.672|
+B_in<6>        |F              |   14.993|
+B_in<6>        |G              |   14.838|
+B_in<7>        |A              |   15.014|
+B_in<7>        |B              |   15.622|
+B_in<7>        |C              |   15.545|
+B_in<7>        |D              |   15.507|
+B_in<7>        |E              |   15.612|
+B_in<7>        |F              |   14.933|
+B_in<7>        |G              |   14.778|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Nov 05 13:28:58 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4572 MB
+
+
+

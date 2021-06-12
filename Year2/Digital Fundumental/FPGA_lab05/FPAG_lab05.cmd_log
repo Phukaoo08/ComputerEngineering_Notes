@@ -1,0 +1,40 @@
+xst -intstyle ise -ifn "D:/Computer Engineering/Year2/Digital Fundumental/FPGA_lab05/FPAG_lab05.xst" -ofn "D:/Computer Engineering/Year2/Digital Fundumental/FPGA_lab05/FPAG_lab05.syr" 
+xst -intstyle ise -ifn "D:/Computer Engineering/Year2/Digital Fundumental/FPGA_lab05/FPAG_lab05.xst" -ofn "D:/Computer Engineering/Year2/Digital Fundumental/FPGA_lab05/FPAG_lab05.syr" 
+xst -intstyle ise -ifn "D:/Computer Engineering/Year2/Digital Fundumental/FPGA_lab05/FPAG_lab05.xst" -ofn "D:/Computer Engineering/Year2/Digital Fundumental/FPGA_lab05/FPAG_lab05.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab05FPGA.ucf -uc FPAG_lab05.ucf -p xc6slx9-tqg144-3 "FPAG_lab05.ngc" FPAG_lab05.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o FPAG_lab05_map.ncd FPAG_lab05.ngd FPAG_lab05.pcf 
+par -w -intstyle ise -ol high -mt off FPAG_lab05_map.ncd FPAG_lab05.ncd FPAG_lab05.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml FPAG_lab05.twx FPAG_lab05.ncd -o FPAG_lab05.twr FPAG_lab05.pcf -ucf lab05FPGA.ucf -ucf FPAG_lab05.ucf 
+bitgen -intstyle ise -f FPAG_lab05.ut FPAG_lab05.ncd 
+xst -intstyle ise -ifn "D:/Computer Engineering/Year2/Digital Fundumental/FPGA_lab05/FPAG_lab05.xst" -ofn "D:/Computer Engineering/Year2/Digital Fundumental/FPGA_lab05/FPAG_lab05.syr" 
+xst -intstyle ise -ifn "D:/Computer Engineering/Year2/Digital Fundumental/FPGA_lab05/FPAG_lab05.xst" -ofn "D:/Computer Engineering/Year2/Digital Fundumental/FPGA_lab05/FPAG_lab05.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab05FPGA.ucf -uc FPAG_lab05.ucf -p xc6slx9-tqg144-3 "FPAG_lab05.ngc" FPAG_lab05.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o FPAG_lab05_map.ncd FPAG_lab05.ngd FPAG_lab05.pcf 
+par -w -intstyle ise -ol high -mt off FPAG_lab05_map.ncd FPAG_lab05.ncd FPAG_lab05.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml FPAG_lab05.twx FPAG_lab05.ncd -o FPAG_lab05.twr FPAG_lab05.pcf -ucf lab05FPGA.ucf -ucf FPAG_lab05.ucf 
+bitgen -intstyle ise -f FPAG_lab05.ut FPAG_lab05.ncd 
+xst -intstyle ise -ifn "D:/Computer Engineering/Year2/Digital Fundumental/FPGA_lab05/FPAG_lab05.xst" -ofn "D:/Computer Engineering/Year2/Digital Fundumental/FPGA_lab05/FPAG_lab05.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab05FPGA.ucf -p xc6slx9-tqg144-3 "FPAG_lab05.ngc" FPAG_lab05.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o FPAG_lab05_map.ncd FPAG_lab05.ngd FPAG_lab05.pcf 
+par -w -intstyle ise -ol high -mt off FPAG_lab05_map.ncd FPAG_lab05.ncd FPAG_lab05.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml FPAG_lab05.twx FPAG_lab05.ncd -o FPAG_lab05.twr FPAG_lab05.pcf -ucf lab05FPGA.ucf 
+bitgen -intstyle ise -f FPAG_lab05.ut FPAG_lab05.ncd 
+bitgen -intstyle ise -f FPAG_lab05.ut FPAG_lab05.ncd 
+xst -intstyle ise -ifn "D:/Computer Engineering/Year2/Digital Fundumental/FPGA_lab05/FPAG_lab05.xst" -ofn "D:/Computer Engineering/Year2/Digital Fundumental/FPGA_lab05/FPAG_lab05.syr" 
+xst -intstyle ise -ifn "D:/Computer Engineering/Year2/Digital Fundumental/FPGA_lab05/FPAG_lab05.xst" -ofn "D:/Computer Engineering/Year2/Digital Fundumental/FPGA_lab05/FPAG_lab05.syr" 
+xst -intstyle ise -ifn "D:/Computer Engineering/Year2/Digital Fundumental/FPGA_lab05/FPAG_lab05.xst" -ofn "D:/Computer Engineering/Year2/Digital Fundumental/FPGA_lab05/FPAG_lab05.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab05FPGA.ucf -p xc6slx9-tqg144-3 "FPAG_lab05.ngc" FPAG_lab05.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o FPAG_lab05_map.ncd FPAG_lab05.ngd FPAG_lab05.pcf 
+par -w -intstyle ise -ol high -mt off FPAG_lab05_map.ncd FPAG_lab05.ncd FPAG_lab05.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml FPAG_lab05.twx FPAG_lab05.ncd -o FPAG_lab05.twr FPAG_lab05.pcf -ucf lab05FPGA.ucf 
+xst -intstyle ise -ifn "D:/Computer Engineering/Year2/Digital Fundumental/FPGA_lab05/FPAG_lab05.xst" -ofn "D:/Computer Engineering/Year2/Digital Fundumental/FPGA_lab05/FPAG_lab05.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab05FPGA.ucf -p xc6slx9-tqg144-3 "FPAG_lab05.ngc" FPAG_lab05.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o FPAG_lab05_map.ncd FPAG_lab05.ngd FPAG_lab05.pcf 
+par -w -intstyle ise -ol high -mt off FPAG_lab05_map.ncd FPAG_lab05.ncd FPAG_lab05.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml FPAG_lab05.twx FPAG_lab05.ncd -o FPAG_lab05.twr FPAG_lab05.pcf -ucf lab05FPGA.ucf 
+bitgen -intstyle ise -f FPAG_lab05.ut FPAG_lab05.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab05FPGA.ucf -p xc6slx9-tqg144-3 "FPAG_lab05.ngc" FPAG_lab05.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o FPAG_lab05_map.ncd FPAG_lab05.ngd FPAG_lab05.pcf 
+par -w -intstyle ise -ol high -mt off FPAG_lab05_map.ncd FPAG_lab05.ncd FPAG_lab05.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml FPAG_lab05.twx FPAG_lab05.ncd -o FPAG_lab05.twr FPAG_lab05.pcf -ucf lab05FPGA.ucf 
+bitgen -intstyle ise -f FPAG_lab05.ut FPAG_lab05.ncd 

@@ -1,0 +1,36 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Oct 29 15:45:54 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "data_inAdd<0>" LOCATE = SITE "P66" LEVEL 1;
+COMP "data_inAdd<1>" LOCATE = SITE "P62" LEVEL 1;
+COMP "data_inAdd<2>" LOCATE = SITE "P61" LEVEL 1;
+COMP "data_inAdd<3>" LOCATE = SITE "P59" LEVEL 1;
+COMP "Buzzer" LOCATE = SITE "P83" LEVEL 1;
+COMP "data_inAdd<4>" LOCATE = SITE "P58" LEVEL 1;
+COMP "data_inAdd<5>" LOCATE = SITE "P57" LEVEL 1;
+COMP "data_inAdd<6>" LOCATE = SITE "P56" LEVEL 1;
+COMP "data_inAdd<7>" LOCATE = SITE "P55" LEVEL 1;
+COMP "data_inAdd<8>" LOCATE = SITE "P99" LEVEL 1;
+COMP "data_inAdd<9>" LOCATE = SITE "P100" LEVEL 1;
+COMP "clk20MHz" LOCATE = SITE "P123" LEVEL 1;
+COMP "data_inAdd<10>" LOCATE = SITE "P101" LEVEL 1;
+COMP "data_inAdd<11>" LOCATE = SITE "P102" LEVEL 1;
+COMP "data_inAdd<12>" LOCATE = SITE "P104" LEVEL 1;
+COMP "data_inAdd<13>" LOCATE = SITE "P105" LEVEL 1;
+COMP "data_inAdd<14>" LOCATE = SITE "P111" LEVEL 1;
+COMP "data_inAdd<15>" LOCATE = SITE "P112" LEVEL 1;
+COMP "A" LOCATE = SITE "P41" LEVEL 1;
+COMP "B" LOCATE = SITE "P40" LEVEL 1;
+COMP "C" LOCATE = SITE "P35" LEVEL 1;
+COMP "D" LOCATE = SITE "P34" LEVEL 1;
+COMP "E" LOCATE = SITE "P32" LEVEL 1;
+COMP "F" LOCATE = SITE "P29" LEVEL 1;
+COMP "G" LOCATE = SITE "P27" LEVEL 1;
+COMP "com0" LOCATE = SITE "P44" LEVEL 1;
+COMP "com1" LOCATE = SITE "P43" LEVEL 1;
+COMP "com2" LOCATE = SITE "P33" LEVEL 1;
+COMP "com3" LOCATE = SITE "P30" LEVEL 1;
+SCHEMATIC END;
+

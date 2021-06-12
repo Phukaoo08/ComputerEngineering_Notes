@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym ToOneHz_DIVIDER {D:/Computer Engineering/Year2/Digital Fundumental/Clock_Timer/ToOneHz_DIVIDER.sch} {D:/Computer Engineering/Year2/Digital Fundumental/Clock_Timer/ToOneHz_DIVIDER.sym} 

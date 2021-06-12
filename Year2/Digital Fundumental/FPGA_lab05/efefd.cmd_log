@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym efefd {D:/Computer Engineering/Year2/Digital Fundumental/FPGA_lab05/efefd.sch} {D:/Computer Engineering/Year2/Digital Fundumental/FPGA_lab05/efefd.sym} 

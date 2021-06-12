@@ -1,0 +1,14 @@
+
+
+NET "Buzzer_alarm" LOC = P83;
+NET "a" LOC = P41;
+NET "b" LOC = P40;
+NET "c" LOC = P35;
+NET "d" LOC = P34;
+NET "f" LOC = P29;
+NET "g" LOC = P27;
+NET "OSC_normal" LOC = P123;
+NET "e" LOC = P32;
+NET "SW" LOC = P51;
+NET "com0" LOC = P43;
+NET "com1" LOC = P44;

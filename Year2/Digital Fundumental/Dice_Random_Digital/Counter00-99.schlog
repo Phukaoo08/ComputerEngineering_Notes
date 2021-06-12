@@ -1,0 +1,40 @@
+add instance m2_1 432 512 R0 -sn=1
+select figure at 1028 724 8 -branches -sn=1
+select all in 343 241 1028 724 -branches -enclosed -sn=1
+select figure at 629 371 8 -branches -sn=1
+select figure at 573 259 8 -branches -sn=1
+add instance muxf5 1136 672 R0 -sn=1
+add instance muxf5_l 752 1008 R0 -sn=1
+select figure at 952 896 8 -branches -sn=1
+select figure at 1299 475 8 -branches -sn=1
+select figure at 615 393 8 -branches -sn=1
+select figure at 1317 567 8 -branches -sn=1
+delete selection -sn=1
+select figure at 714 387 8 -branches -sn=1
+delete selection -sn=1
+select figure at 910 838 8 -branches -sn=1
+move instance at 752 1008 to 592 592 R0 -keepConn -sn=1
+select figure at 762 431 8 -branches -sn=1
+select figure at 754 766 8 -branches -sn=1
+BeginGroup
+ADD INSTANCE muxf5_l 592 960 R0 -sn=1
+PASTE NAME INSTANCE AT 752 816 XLXI_3 -NoDuplicateNetNames -sn=1
+EndGroup
+select figure at 824 1143 8 -branches -sn=1
+select figure at 752 846 8 -branches -sn=1
+select figure at 760 1189 8 -branches -sn=1
+BeginGroup
+ADD INSTANCE muxf5_l 592 1328 R0 -sn=1
+PASTE NAME INSTANCE AT 752 1184 XLXI_4 -NoDuplicateNetNames -sn=1
+EndGroup
+select figure at 862 1313 8 -branches -sn=1
+select figure at 748 1181 8 -branches -sn=1
+select figure at 714 1503 8 -branches -sn=1
+select figure at 708 1413 8 -branches -sn=1
+BeginGroup
+ADD INSTANCE muxf5_l 592 1696 R0 -sn=1
+PASTE NAME INSTANCE AT 752 1552 XLXI_5 -NoDuplicateNetNames -sn=1
+EndGroup
+select figure at 584 553 8 -branches -sn=1
+select figure at 591 558 8 -branches -sn=1
+select figure at 1906 493 8 -branches -sn=1

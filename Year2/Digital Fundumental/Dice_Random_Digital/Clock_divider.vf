@@ -1,0 +1,130 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Clock_divider.vf
+// /___/   /\     Timestamp : 10/19/2020 22:06:44
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "D:/Computer Engineering/Year2/Digital Fundumental/Dice_Random_Digital/Clock_divider.vf" -w "D:/Computer Engineering/Year2/Digital Fundumental/Dice_Random_Digital/Clock_divider.sch"
+//Design Name: Clock_divider
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FJKC_HXILINX_Clock_divider(Q, C, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+
+
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else
+        begin
+           if(!J)
+           begin
+              if(K)
+              Q <= 1'b0;
+           end
+           else
+           begin
+              if(!K)
+              Q <= 1'b1;
+              else 
+              Q <= !Q;
+           end
+        end
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module Clock_divider(OSC, 
+                     OSC_DIV);
+
+    input OSC;
+   output OSC_DIV;
+   
+   wire XLXN_3;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   wire XLXN_13;
+   wire XLXN_15;
+   wire XLXN_18;
+   wire XLXN_19;
+   wire XLXN_20;
+   wire XLXN_21;
+   
+   (* HU_SET = "XLXI_1_0" *) 
+   FJKC_HXILINX_Clock_divider  XLXI_1 (.C(OSC), 
+                                      .CLR(XLXN_9), 
+                                      .J(XLXN_3), 
+                                      .K(XLXN_3), 
+                                      .Q(XLXN_6));
+   (* HU_SET = "XLXI_2_1" *) 
+   FJKC_HXILINX_Clock_divider  XLXI_2 (.C(XLXN_6), 
+                                      .CLR(XLXN_9), 
+                                      .J(XLXN_3), 
+                                      .K(XLXN_3), 
+                                      .Q(XLXN_7));
+   (* HU_SET = "XLXI_3_2" *) 
+   FJKC_HXILINX_Clock_divider  XLXI_3 (.C(XLXN_7), 
+                                      .CLR(XLXN_9), 
+                                      .J(XLXN_3), 
+                                      .K(XLXN_3), 
+                                      .Q(XLXN_8));
+   (* HU_SET = "XLXI_4_3" *) 
+   FJKC_HXILINX_Clock_divider  XLXI_4 (.C(XLXN_8), 
+                                      .CLR(XLXN_9), 
+                                      .J(XLXN_3), 
+                                      .K(XLXN_3), 
+                                      .Q(XLXN_13));
+   (* HU_SET = "XLXI_5_4" *) 
+   FJKC_HXILINX_Clock_divider  XLXI_5 (.C(XLXN_13), 
+                                      .CLR(XLXN_21), 
+                                      .J(XLXN_15), 
+                                      .K(XLXN_15), 
+                                      .Q(XLXN_18));
+   (* HU_SET = "XLXI_6_5" *) 
+   FJKC_HXILINX_Clock_divider  XLXI_6 (.C(XLXN_18), 
+                                      .CLR(XLXN_21), 
+                                      .J(XLXN_15), 
+                                      .K(XLXN_15), 
+                                      .Q(XLXN_19));
+   (* HU_SET = "XLXI_7_6" *) 
+   FJKC_HXILINX_Clock_divider  XLXI_7 (.C(XLXN_19), 
+                                      .CLR(XLXN_21), 
+                                      .J(XLXN_15), 
+                                      .K(XLXN_15), 
+                                      .Q(XLXN_20));
+   (* HU_SET = "XLXI_8_7" *) 
+   FJKC_HXILINX_Clock_divider  XLXI_8 (.C(XLXN_20), 
+                                      .CLR(XLXN_21), 
+                                      .J(XLXN_15), 
+                                      .K(XLXN_15), 
+                                      .Q(OSC_DIV));
+   GND  XLXI_17 (.G(XLXN_9));
+   VCC  XLXI_18 (.P(XLXN_3));
+   VCC  XLXI_19 (.P(XLXN_15));
+   GND  XLXI_20 (.G(XLXN_21));
+endmodule

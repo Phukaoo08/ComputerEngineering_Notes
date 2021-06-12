@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym Counter_CEOTOR {D:/Computer Engineering/Year2/Digital Fundumental/Dice_Random_Digital/Counter_CEOTOR.sch} {D:/Computer Engineering/Year2/Digital Fundumental/Dice_Random_Digital/Counter_CEOTOR.sym} 

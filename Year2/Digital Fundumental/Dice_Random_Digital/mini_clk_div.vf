@@ -1,0 +1,84 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : mini_clk_div.vf
+// /___/   /\     Timestamp : 10/19/2020 22:06:45
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "D:/Computer Engineering/Year2/Digital Fundumental/Dice_Random_Digital/mini_clk_div.vf" -w "D:/Computer Engineering/Year2/Digital Fundumental/Dice_Random_Digital/mini_clk_div.sch"
+//Design Name: mini_clk_div
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FJKC_HXILINX_mini_clk_div(Q, C, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+
+
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else
+        begin
+           if(!J)
+           begin
+              if(K)
+              Q <= 1'b0;
+           end
+           else
+           begin
+              if(!K)
+              Q <= 1'b1;
+              else 
+              Q <= !Q;
+           end
+        end
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module mini_clk_div(OSC, 
+                    clk_div);
+
+    input OSC;
+   output clk_div;
+   
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_10;
+   
+   (* HU_SET = "XLXI_1_22" *) 
+   FJKC_HXILINX_mini_clk_div  XLXI_1 (.C(OSC), 
+                                     .CLR(XLXN_10), 
+                                     .J(XLXN_7), 
+                                     .K(XLXN_7), 
+                                     .Q(XLXN_6));
+   (* HU_SET = "XLXI_19_23" *) 
+   FJKC_HXILINX_mini_clk_div  XLXI_19 (.C(XLXN_6), 
+                                      .CLR(XLXN_10), 
+                                      .J(XLXN_7), 
+                                      .K(XLXN_7), 
+                                      .Q(clk_div));
+   VCC  XLXI_20 (.P(XLXN_7));
+   GND  XLXI_21 (.G(XLXN_10));
+endmodule

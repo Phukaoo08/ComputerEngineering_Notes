@@ -1,0 +1,4 @@
+sch2sym -intstyle ise -family spartan6 -refsym Counter_Sec {D:/Computer Engineering/Year2/Digital Fundumental/Clock_Timer/Counter_Sec.sch} {D:/Computer Engineering/Year2/Digital Fundumental/Clock_Timer/Counter_Sec.sym} 
+sch2sym -intstyle ise -family spartan6 -refsym Counter_Sec {D:/Computer Engineering/Year2/Digital Fundumental/Clock_Timer/Counter_Sec.sch} {D:/Computer Engineering/Year2/Digital Fundumental/Clock_Timer/Counter_Sec.sym} 
+sch2sym -intstyle ise -family spartan6 -refsym Counter_Sec {D:/Computer Engineering/Year2/Digital Fundumental/Clock_Timer/Counter_Sec.sch} {D:/Computer Engineering/Year2/Digital Fundumental/Clock_Timer/Counter_Sec.sym} 
+sch2sym -intstyle ise -family spartan6 -w -refsym Counter_Sec {D:/Computer Engineering/Year2/Digital Fundumental/Clock_Timer/Counter_Sec.sch} {D:/Computer Engineering/Year2/Digital Fundumental/Clock_Timer/Counter_Sec.sym} 

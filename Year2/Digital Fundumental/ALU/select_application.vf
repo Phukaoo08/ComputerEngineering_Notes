@@ -1,0 +1,155 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : select_application.vf
+// /___/   /\     Timestamp : 11/04/2020 19:43:17
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog E:/digit_program/project/ALU/select_application.vf -w E:/digit_program/project/ALU/select_application.sch
+//Design Name: select_application
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module M4_1E_HXILINX_select_application (O, D0, D1, D2, D3, E, S0, S1);
+    
+
+   output O;
+
+   input  D0;
+   input  D1;
+   input  D2;
+   input  D3;
+   input  E;
+   input  S0;
+   input  S1;
+
+   reg O;
+
+   always @ ( D0 or D1 or D2 or D3 or E or S0 or S1)
+   begin
+      if(!E)
+      O <= 1'b0;
+      else 
+      begin
+        case({S1,S0})
+        2'b00 : O <= D0;
+        2'b01 : O <= D1;
+        2'b10 : O <= D2;
+        2'b11 : O <= D3;
+        endcase
+      end
+   end
+    
+endmodule
+`timescale 1ns / 1ps
+
+module select_application(adder, 
+                          D0, 
+                          D1, 
+                          shifter, 
+                          sub, 
+                          xor_8bit, 
+                          out_put);
+
+    input [7:0] adder;
+    input D0;
+    input D1;
+    input [7:0] shifter;
+    input [7:0] sub;
+    input [7:0] xor_8bit;
+   output [7:0] out_put;
+   
+   wire [3:0] XLXN_25;
+   wire [3:0] XLXN_33;
+   
+   (* HU_SET = "XLXI_16_0_18" *) 
+   M4_1E_HXILINX_select_application  XLXI_16_0 (.D0(adder[0]), 
+                                               .D1(sub[0]), 
+                                               .D2(xor_8bit[0]), 
+                                               .D3(shifter[0]), 
+                                               .E(XLXN_25[0]), 
+                                               .S0(D0), 
+                                               .S1(D1), 
+                                               .O(out_put[0]));
+   (* HU_SET = "XLXI_16_1_17" *) 
+   M4_1E_HXILINX_select_application  XLXI_16_1 (.D0(adder[1]), 
+                                               .D1(sub[1]), 
+                                               .D2(xor_8bit[1]), 
+                                               .D3(shifter[1]), 
+                                               .E(XLXN_25[1]), 
+                                               .S0(D0), 
+                                               .S1(D1), 
+                                               .O(out_put[1]));
+   (* HU_SET = "XLXI_16_2_16" *) 
+   M4_1E_HXILINX_select_application  XLXI_16_2 (.D0(adder[2]), 
+                                               .D1(sub[2]), 
+                                               .D2(xor_8bit[2]), 
+                                               .D3(shifter[2]), 
+                                               .E(XLXN_25[2]), 
+                                               .S0(D0), 
+                                               .S1(D1), 
+                                               .O(out_put[2]));
+   (* HU_SET = "XLXI_16_3_15" *) 
+   M4_1E_HXILINX_select_application  XLXI_16_3 (.D0(adder[3]), 
+                                               .D1(sub[3]), 
+                                               .D2(xor_8bit[3]), 
+                                               .D3(shifter[3]), 
+                                               .E(XLXN_25[3]), 
+                                               .S0(D0), 
+                                               .S1(D1), 
+                                               .O(out_put[3]));
+   VCC  XLXI_17_0 (.P(XLXN_25[0]));
+   VCC  XLXI_17_1 (.P(XLXN_25[1]));
+   VCC  XLXI_17_2 (.P(XLXN_25[2]));
+   VCC  XLXI_17_3 (.P(XLXN_25[3]));
+   (* HU_SET = "XLXI_18_0_22" *) 
+   M4_1E_HXILINX_select_application  XLXI_18_0 (.D0(adder[4]), 
+                                               .D1(sub[4]), 
+                                               .D2(xor_8bit[4]), 
+                                               .D3(shifter[4]), 
+                                               .E(XLXN_33[0]), 
+                                               .S0(D0), 
+                                               .S1(D1), 
+                                               .O(out_put[4]));
+   (* HU_SET = "XLXI_18_1_21" *) 
+   M4_1E_HXILINX_select_application  XLXI_18_1 (.D0(adder[5]), 
+                                               .D1(sub[5]), 
+                                               .D2(xor_8bit[5]), 
+                                               .D3(shifter[5]), 
+                                               .E(XLXN_33[1]), 
+                                               .S0(D0), 
+                                               .S1(D1), 
+                                               .O(out_put[5]));
+   (* HU_SET = "XLXI_18_2_20" *) 
+   M4_1E_HXILINX_select_application  XLXI_18_2 (.D0(adder[6]), 
+                                               .D1(sub[6]), 
+                                               .D2(xor_8bit[6]), 
+                                               .D3(shifter[6]), 
+                                               .E(XLXN_33[2]), 
+                                               .S0(D0), 
+                                               .S1(D1), 
+                                               .O(out_put[6]));
+   (* HU_SET = "XLXI_18_3_19" *) 
+   M4_1E_HXILINX_select_application  XLXI_18_3 (.D0(adder[7]), 
+                                               .D1(sub[7]), 
+                                               .D2(xor_8bit[7]), 
+                                               .D3(shifter[7]), 
+                                               .E(XLXN_33[3]), 
+                                               .S0(D0), 
+                                               .S1(D1), 
+                                               .O(out_put[7]));
+   VCC  XLXI_19_0 (.P(XLXN_33[0]));
+   VCC  XLXI_19_1 (.P(XLXN_33[1]));
+   VCC  XLXI_19_2 (.P(XLXN_33[2]));
+   VCC  XLXI_19_3 (.P(XLXN_33[3]));
+endmodule

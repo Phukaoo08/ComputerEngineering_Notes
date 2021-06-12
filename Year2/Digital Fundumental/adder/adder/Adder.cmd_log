@@ -1,0 +1,7 @@
+sch2hdl -intstyle ise -family spartan6 -verilog Adder_drc.vf -w E:/digit_program/project/adder/Adder.sch 
+sch2sym -intstyle ise -family spartan6 -refsym Adder E:/digit_program/project/adder/Adder.sch E:/digit_program/project/adder/Adder.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Adder {D:/Computer Engineering/Year2/Digital Fundumental/adder/adder/Adder.sch} {D:/Computer Engineering/Year2/Digital Fundumental/adder/adder/Adder.sym} 
+sch2sym -intstyle ise -family spartan6 -w -refsym Adder {D:/Computer Engineering/Year2/Digital Fundumental/adder/adder/Adder.sch} {D:/Computer Engineering/Year2/Digital Fundumental/adder/adder/Adder.sym} 
+sch2sym -intstyle ise -family spartan6 -w -refsym Adder {D:/Computer Engineering/Year2/Digital Fundumental/adder/adder/Adder.sch} {D:/Computer Engineering/Year2/Digital Fundumental/adder/adder/Adder.sym} 
+sch2sym -intstyle ise -family spartan6 -w -refsym Adder {D:/Computer Engineering/Year2/Digital Fundumental/adder/adder/Adder.sch} {D:/Computer Engineering/Year2/Digital Fundumental/adder/adder/Adder.sym} 
+sch2sym -intstyle ise -family spartan6 -w -refsym Adder {D:/Computer Engineering/Year2/Digital Fundumental/adder/adder/Adder.sch} {D:/Computer Engineering/Year2/Digital Fundumental/adder/adder/Adder.sym} 

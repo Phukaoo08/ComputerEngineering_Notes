@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym select_button E:/digit_program/project/ALU/select_button.sch E:/digit_program/project/ALU/select_button.sym 

@@ -1,0 +1,65 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Adder.vf
+// /___/   /\     Timestamp : 10/29/2020 14:41:22
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "D:/Computer Engineering/Year2/Digital Fundumental/adder/adder/Adder.vf" -w "D:/Computer Engineering/Year2/Digital Fundumental/adder/adder/Adder.sch"
+//Design Name: Adder
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module ADD8_HXILINX_Adder (CO, OFL, S, A, B, CI);
+
+
+   output 	      CO;
+   output 	      OFL;
+   output [7:0]       S;
+
+   input  [7:0]       A;
+   input  [7:0]       B;
+   input              CI;
+
+   assign   {CO, S} = A + B + CI;
+   assign   OFL     = ( A[7] & B[7] & (~S[7])) | ((~A[7]) & (~B[7]) & S[7]);
+
+endmodule
+`timescale 1ns / 1ps
+
+module Adder(data_inA, 
+             sum);
+
+    input [15:0] data_inA;
+   output [15:0] sum;
+   
+   wire XLXN_48;
+   wire XLXN_52;
+   
+   GND  XLXI_24_0 (.G(sum[9]));
+   GND  XLXI_24_1 (.G(sum[10]));
+   GND  XLXI_24_2 (.G(sum[11]));
+   GND  XLXI_24_3 (.G(sum[12]));
+   GND  XLXI_24_4 (.G(sum[13]));
+   GND  XLXI_24_5 (.G(sum[14]));
+   GND  XLXI_24_6 (.G(sum[15]));
+   (* HU_SET = "XLXI_27_1" *) 
+   ADD8_HXILINX_Adder  XLXI_27 (.A(data_inA[7:0]), 
+                               .B(data_inA[15:8]), 
+                               .CI(XLXN_48), 
+                               .CO(sum[8]), 
+                               .OFL(XLXN_52), 
+                               .S(sum[7:0]));
+   GND  XLXI_28 (.G(XLXN_48));
+   GND  XLXI_29 (.G(XLXN_52));
+endmodule

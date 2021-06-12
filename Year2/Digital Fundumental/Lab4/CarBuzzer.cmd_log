@@ -1,0 +1,60 @@
+xst -intstyle ise -ifn "C:/Users/Tree/Lab4/CarBuzzer.xst" -ofn "C:/Users/Tree/Lab4/CarBuzzer.syr" 
+xst -intstyle ise -ifn "C:/Users/Tree/Lab4/CarBuzzer.xst" -ofn "C:/Users/Tree/Lab4/CarBuzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Runner.ucf -p xc6slx9-tqg144-3 CarBuzzer.ngc CarBuzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o CarBuzzer_map.ncd CarBuzzer.ngd CarBuzzer.pcf 
+par -w -intstyle ise -ol high -mt off CarBuzzer_map.ncd CarBuzzer.ncd CarBuzzer.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml CarBuzzer.twx CarBuzzer.ncd -o CarBuzzer.twr CarBuzzer.pcf -ucf Runner.ucf 
+bitgen -intstyle ise -f CarBuzzer.ut CarBuzzer.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Runner.ucf -p xc6slx9-tqg144-3 CarBuzzer.ngc CarBuzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o CarBuzzer_map.ncd CarBuzzer.ngd CarBuzzer.pcf 
+par -w -intstyle ise -ol high -mt off CarBuzzer_map.ncd CarBuzzer.ncd CarBuzzer.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml CarBuzzer.twx CarBuzzer.ncd -o CarBuzzer.twr CarBuzzer.pcf -ucf Runner.ucf 
+bitgen -intstyle ise -f CarBuzzer.ut CarBuzzer.ncd 
+xst -intstyle ise -ifn "C:/Users/Tree/Lab4/CarBuzzer.xst" -ofn "C:/Users/Tree/Lab4/CarBuzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Runner.ucf -p xc6slx9-tqg144-3 CarBuzzer.ngc CarBuzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o CarBuzzer_map.ncd CarBuzzer.ngd CarBuzzer.pcf 
+par -w -intstyle ise -ol high -mt off CarBuzzer_map.ncd CarBuzzer.ncd CarBuzzer.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml CarBuzzer.twx CarBuzzer.ncd -o CarBuzzer.twr CarBuzzer.pcf -ucf Runner.ucf 
+bitgen -intstyle ise -f CarBuzzer.ut CarBuzzer.ncd 
+xst -intstyle ise -ifn "C:/Users/Tree/Lab4/CarBuzzer.xst" -ofn "C:/Users/Tree/Lab4/CarBuzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Runner.ucf -p xc6slx9-tqg144-3 CarBuzzer.ngc CarBuzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o CarBuzzer_map.ncd CarBuzzer.ngd CarBuzzer.pcf 
+par -w -intstyle ise -ol high -mt off CarBuzzer_map.ncd CarBuzzer.ncd CarBuzzer.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml CarBuzzer.twx CarBuzzer.ncd -o CarBuzzer.twr CarBuzzer.pcf -ucf Runner.ucf 
+bitgen -intstyle ise -f CarBuzzer.ut CarBuzzer.ncd 
+bitgen -intstyle ise -f CarBuzzer.ut CarBuzzer.ncd 
+xst -intstyle ise -ifn "C:/Users/Tree/Lab4/CarBuzzer.xst" -ofn "C:/Users/Tree/Lab4/CarBuzzer.syr" 
+xst -intstyle ise -ifn "C:/Users/Tree/Lab4/CarBuzzer.xst" -ofn "C:/Users/Tree/Lab4/CarBuzzer.syr" 
+xst -intstyle ise -ifn "C:/Users/Tree/Lab4/CarBuzzer.xst" -ofn "C:/Users/Tree/Lab4/CarBuzzer.syr" 
+xst -intstyle ise -ifn "C:/Users/Tree/Lab4/CarBuzzer.xst" -ofn "C:/Users/Tree/Lab4/CarBuzzer.syr" 
+xst -intstyle ise -ifn "C:/Users/Tree/Lab4/CarBuzzer.xst" -ofn "C:/Users/Tree/Lab4/CarBuzzer.syr" 
+xst -intstyle ise -ifn "C:/Users/Tree/Lab4/CarBuzzer.xst" -ofn "C:/Users/Tree/Lab4/CarBuzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Runner.ucf -p xc6slx9-tqg144-3 CarBuzzer.ngc CarBuzzer.ngd  
+xst -intstyle ise -ifn "C:/Users/Tree/Lab4/CarBuzzer.xst" -ofn "C:/Users/Tree/Lab4/CarBuzzer.syr" 
+xst -intstyle ise -ifn "C:/Users/Tree/Lab4/CarBuzzer.xst" -ofn "C:/Users/Tree/Lab4/CarBuzzer.syr" 
+xst -intstyle ise -ifn "C:/Users/Tree/Lab4/CarBuzzer.xst" -ofn "C:/Users/Tree/Lab4/CarBuzzer.syr" 
+xst -intstyle ise -ifn "C:/Users/Tree/Lab4/CarBuzzer.xst" -ofn "C:/Users/Tree/Lab4/CarBuzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Runner.ucf -p xc6slx9-tqg144-3 CarBuzzer.ngc CarBuzzer.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Runner.ucf -p xc6slx9-tqg144-3 CarBuzzer.ngc CarBuzzer.ngd  
+xst -intstyle ise -ifn "C:/Users/Tree/Lab4/CarBuzzer.xst" -ofn "C:/Users/Tree/Lab4/CarBuzzer.syr" 
+xst -intstyle ise -ifn "C:/Users/Tree/Lab4/CarBuzzer.xst" -ofn "C:/Users/Tree/Lab4/CarBuzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Pin.ucf -p xc6slx9-tqg144-3 CarBuzzer.ngc CarBuzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o CarBuzzer_map.ncd CarBuzzer.ngd CarBuzzer.pcf 
+par -w -intstyle ise -ol high -mt off CarBuzzer_map.ncd CarBuzzer.ncd CarBuzzer.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml CarBuzzer.twx CarBuzzer.ncd -o CarBuzzer.twr CarBuzzer.pcf -ucf Pin.ucf 
+bitgen -intstyle ise -f CarBuzzer.ut CarBuzzer.ncd 
+xst -intstyle ise -ifn "C:/Users/Tree/Lab4/CarBuzzer.xst" -ofn "C:/Users/Tree/Lab4/CarBuzzer.syr" 
+xst -intstyle ise -ifn "C:/Users/Tree/Lab4/CarBuzzer.xst" -ofn "C:/Users/Tree/Lab4/CarBuzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Pin.ucf -p xc6slx9-tqg144-3 CarBuzzer.ngc CarBuzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o CarBuzzer_map.ncd CarBuzzer.ngd CarBuzzer.pcf 
+par -w -intstyle ise -ol high -mt off CarBuzzer_map.ncd CarBuzzer.ncd CarBuzzer.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml CarBuzzer.twx CarBuzzer.ncd -o CarBuzzer.twr CarBuzzer.pcf -ucf Pin.ucf 
+bitgen -intstyle ise -f CarBuzzer.ut CarBuzzer.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Pin.ucf -p xc6slx9-tqg144-3 "CarBuzzer.ngc" CarBuzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o CarBuzzer_map.ncd CarBuzzer.ngd CarBuzzer.pcf 
+xst -intstyle ise -ifn "D:/Computer Engineering/Year2/Digital Fundumental/Lab4/CarBuzzer.xst" -ofn "D:/Computer Engineering/Year2/Digital Fundumental/Lab4/CarBuzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Pin.ucf -p xc6slx9-tqg144-3 "CarBuzzer.ngc" CarBuzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o CarBuzzer_map.ncd CarBuzzer.ngd CarBuzzer.pcf 
+par -w -intstyle ise -ol high -mt off CarBuzzer_map.ncd CarBuzzer.ncd CarBuzzer.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml CarBuzzer.twx CarBuzzer.ncd -o CarBuzzer.twr CarBuzzer.pcf -ucf Pin.ucf 
+bitgen -intstyle ise -f CarBuzzer.ut CarBuzzer.ncd 

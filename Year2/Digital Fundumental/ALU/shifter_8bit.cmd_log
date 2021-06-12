@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym shifter_8bit E:/digit_program/project/ALU/shifter_8bit.sch E:/digit_program/project/ALU/shifter_8bit.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym shifter_8bit E:/digit_program/project/ALU/shifter_8bit.sch E:/digit_program/project/ALU/shifter_8bit.sym 

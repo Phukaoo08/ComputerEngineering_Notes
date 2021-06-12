@@ -1,0 +1,13 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Sep 17 15:37:27 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Output" LOCATE = SITE "P83" LEVEL 1;
+COMP "Switch_B" LOCATE = SITE "P57" LEVEL 1;
+COMP "Switch_D" LOCATE = SITE "P58" LEVEL 1;
+COMP "Switch_E" LOCATE = SITE "P59" LEVEL 1;
+COMP "Switch_H" LOCATE = SITE "P55" LEVEL 1;
+COMP "Switch_S" LOCATE = SITE "P56" LEVEL 1;
+SCHEMATIC END;
+

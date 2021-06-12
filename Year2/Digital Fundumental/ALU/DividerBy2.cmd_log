@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym DividerBy2 {D:/Computer Engineering/Year2/Digital Fundumental/adder/adder/DividerBy2.sch} {D:/Computer Engineering/Year2/Digital Fundumental/ALU/DividerBy2.sym} 

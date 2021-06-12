@@ -1,0 +1,18 @@
+xst -intstyle ise -ifn "D:/Computer Engineering/Year2/Digital Fundumental/Lab05/Dec_Decoder_7segments.xst" -ofn "D:/Computer Engineering/Year2/Digital Fundumental/Lab05/Dec_Decoder_7segments.syr" 
+xst -intstyle ise -ifn "D:/Computer Engineering/Year2/Digital Fundumental/Lab05/Dec_Decoder_7segments.xst" -ofn "D:/Computer Engineering/Year2/Digital Fundumental/Lab05/Dec_Decoder_7segments.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dec_Decoder_7segments.ucf -p xc6slx9-tqg144-3 "Dec_Decoder_7segments.ngc" Dec_Decoder_7segments.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dec_Decoder_7segments_map.ncd Dec_Decoder_7segments.ngd Dec_Decoder_7segments.pcf 
+par -w -intstyle ise -ol high -mt off Dec_Decoder_7segments_map.ncd Dec_Decoder_7segments.ncd Dec_Decoder_7segments.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Dec_Decoder_7segments.twx Dec_Decoder_7segments.ncd -o Dec_Decoder_7segments.twr Dec_Decoder_7segments.pcf -ucf Dec_Decoder_7segments.ucf 
+bitgen -intstyle ise -f Dec_Decoder_7segments.ut Dec_Decoder_7segments.ncd 
+xst -intstyle ise -ifn "D:/Computer Engineering/Year2/Digital Fundumental/Lab05/Dec_Decoder_7segments.xst" -ofn "D:/Computer Engineering/Year2/Digital Fundumental/Lab05/Dec_Decoder_7segments.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dec_Decoder_7segments.ucf -p xc6slx9-tqg144-3 "Dec_Decoder_7segments.ngc" Dec_Decoder_7segments.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dec_Decoder_7segments_map.ncd Dec_Decoder_7segments.ngd Dec_Decoder_7segments.pcf 
+par -w -intstyle ise -ol high -mt off Dec_Decoder_7segments_map.ncd Dec_Decoder_7segments.ncd Dec_Decoder_7segments.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Dec_Decoder_7segments.twx Dec_Decoder_7segments.ncd -o Dec_Decoder_7segments.twr Dec_Decoder_7segments.pcf -ucf Dec_Decoder_7segments.ucf 
+xst -intstyle ise -ifn "D:/Computer Engineering/Year2/Digital Fundumental/Lab05/Dec_Decoder_7segments.xst" -ofn "D:/Computer Engineering/Year2/Digital Fundumental/Lab05/Dec_Decoder_7segments.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dec_Decoder_7segments.ucf -p xc6slx9-tqg144-3 "Dec_Decoder_7segments.ngc" Dec_Decoder_7segments.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dec_Decoder_7segments_map.ncd Dec_Decoder_7segments.ngd Dec_Decoder_7segments.pcf 
+par -w -intstyle ise -ol high -mt off Dec_Decoder_7segments_map.ncd Dec_Decoder_7segments.ncd Dec_Decoder_7segments.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Dec_Decoder_7segments.twx Dec_Decoder_7segments.ncd -o Dec_Decoder_7segments.twr Dec_Decoder_7segments.pcf -ucf Dec_Decoder_7segments.ucf 
+bitgen -intstyle ise -f Dec_Decoder_7segments.ut Dec_Decoder_7segments.ncd 

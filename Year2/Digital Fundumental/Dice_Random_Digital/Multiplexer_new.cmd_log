@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym Multiplexer_new {D:/Computer Engineering/Year2/Digital Fundumental/Dice_Random_Digital/Multiplexer_new.sch} {D:/Computer Engineering/Year2/Digital Fundumental/Dice_Random_Digital/Multiplexer_new.sym} 

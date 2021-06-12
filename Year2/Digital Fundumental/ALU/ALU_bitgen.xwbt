@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Computer Engineering\Year2\Digital Fundumental\ALU\ALU.ncd
+OUTFILE=D:\Computer Engineering\Year2\Digital Fundumental\ALU\ALU.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=D:\Computer Engineering\Year2\Digital Fundumental\ALU
+LICENSE=WebPack
+USER_INFO=__0_0_0

@@ -1,0 +1,74 @@
+ISim log file
+Running: D:\Computer Engineering\Year2\Digital Fundumental\Clock_Timer\ToOneHz_DIVIDER_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Computer Engineering/Year2/Digital Fundumental/Clock_Timer/ToOneHz_DIVIDER_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# isim force add /ToOneHz_DIVIDER/OSC_20Hz 1 -radix bin -value 0 -radix bin -time 500 ns -repeat 1 us
+# isim force add /ToOneHz_DIVIDER/OSC_20Hz 1 -radix bin -value 0 -radix bin -time 500 ns -repeat 1 us
+# isim force add /ToOneHz_DIVIDER/XLXN_14 1 -radix bin
+# isim force add /ToOneHz_DIVIDER/XLXN_14 1 -radix bin
+# run 1.00us
+# isim force remove /ToOneHz_DIVIDER/XLXN_14
+# isim force add /ToOneHz_DIVIDER/OSC_20Hz 1 -radix bin -value 0 -radix bin -time 500 ns -repeat 1 us
+# isim force add /ToOneHz_DIVIDER/OSC_20Hz 1 -radix bin -value 0 -radix bin -time 500 ns -repeat 1 us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us

@@ -1,0 +1,81 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml Dec_Decoder_7segments.twx Dec_Decoder_7segments.ncd -o
+Dec_Decoder_7segments.twr Dec_Decoder_7segments.pcf -ucf
+Dec_Decoder_7segments.ucf
+
+Design file:              Dec_Decoder_7segments.ncd
+Physical constraint file: Dec_Decoder_7segments.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+In1_A          |O_g            |    6.232|
+In1_A          |a              |    6.640|
+In1_A          |b              |    6.778|
+In1_A          |c              |    7.126|
+In1_A          |d              |    5.917|
+In1_A          |e              |    6.695|
+In1_A          |f              |    6.035|
+In2_B          |O_g            |    6.336|
+In2_B          |a              |    6.843|
+In2_B          |b              |    6.398|
+In2_B          |c              |    7.380|
+In2_B          |d              |    6.261|
+In2_B          |e              |    6.321|
+In2_B          |f              |    6.413|
+In3_C          |O_g            |    7.080|
+In3_C          |a              |    6.695|
+In3_C          |b              |    6.588|
+In3_C          |c              |    6.750|
+In3_C          |d              |    6.740|
+In3_C          |e              |    6.460|
+In3_C          |f              |    7.119|
+In4_D          |O_g            |    6.481|
+In4_D          |a              |    6.137|
+In4_D          |b              |    6.262|
+In4_D          |c              |    6.831|
+In4_D          |d              |    6.671|
+In4_D          |e              |    6.472|
+In4_D          |f              |    6.545|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Oct 08 14:24:36 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4549 MB
+
+
+

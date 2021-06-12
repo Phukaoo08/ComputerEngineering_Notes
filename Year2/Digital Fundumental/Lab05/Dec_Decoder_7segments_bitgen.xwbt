@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Computer Engineering\Year2\Digital Fundumental\Lab05\Dec_Decoder_7segments.ncd
+OUTFILE=D:\Computer Engineering\Year2\Digital Fundumental\Lab05\Dec_Decoder_7segments.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=D:\Computer Engineering\Year2\Digital Fundumental\Lab05
+LICENSE=WebPack
+USER_INFO=__0_0_0

@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym mini_clk_div {D:/Computer Engineering/Year2/Digital Fundumental/Dice_Random_Digital/mini_clk_div.sch} {D:/Computer Engineering/Year2/Digital Fundumental/Dice_Random_Digital/mini_clk_div.sym} 

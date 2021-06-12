@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym BCD_DECODER_FIXNAJA {D:/Computer Engineering/Year2/Digital Fundumental/Dice_Random_Digital/BCD_DECODER_FIXNAJA.sch} {D:/Computer Engineering/Year2/Digital Fundumental/Dice_Random_Digital/BCD_DECODER_FIXNAJA.sym} 

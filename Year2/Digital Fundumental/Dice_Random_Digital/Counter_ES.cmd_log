@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym Counter_ES {D:/Computer Engineering/Year2/Digital Fundumental/Dice_Random_Digital/Counter_ES.sch} {D:/Computer Engineering/Year2/Digital Fundumental/Dice_Random_Digital/Counter_ES.sym} 

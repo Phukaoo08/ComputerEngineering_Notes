@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Thu Sep 17 15:26:24 2020
+# Process ID: 17936
+# Log file: D:/Computer Engineering/Year2/Digital Fundumental/FPGA_lab05/planAhead_run_3/planAhead.log
+# Journal file: D:/Computer Engineering/Year2/Digital Fundumental/FPGA_lab05/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {D:/Computer Engineering/Year2/Digital Fundumental/FPGA_lab05/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1

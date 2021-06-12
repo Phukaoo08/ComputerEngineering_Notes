@@ -1,0 +1,35 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : LED.vf
+// /___/   /\     Timestamp : 11/10/2020 13:38:33
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "D:/Computer Engineering/Year2/Digital Fundumental/eiei/LED.vf" -w "D:/Computer Engineering/Year2/Digital Fundumental/eiei/LED.sch"
+//Design Name: LED
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module LED(IN_IKUY, 
+           OUT1);
+
+    input IN_IKUY;
+   output OUT1;
+   
+   wire IN_IKUY_DUMMY;
+   
+   assign IN_IKUY_DUMMY = IN_IKUY;
+   PULLDOWN  XLXI_4 (.O(IN_IKUY_DUMMY));
+   BUF  XLXI_5 (.I(IN_IKUY_DUMMY), 
+               .O(OUT1));
+endmodule

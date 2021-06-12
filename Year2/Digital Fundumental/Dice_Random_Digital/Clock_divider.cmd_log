@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym Clock_divider {D:/Computer Engineering/Year2/Digital Fundumental/Dice_Random_Digital/Clock_divider.sch} {D:/Computer Engineering/Year2/Digital Fundumental/Dice_Random_Digital/Clock_divider.sym} 

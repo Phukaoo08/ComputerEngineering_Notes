@@ -1,0 +1,41 @@
+//Slide sw
+net "data_inAdd(7)" loc = p55;
+net "data_inAdd(6)" loc = p56;
+net "data_inAdd(5)" loc = p57;
+net "data_inAdd(4)" loc = p58;
+net "data_inAdd(3)" loc = p59;
+net "data_inAdd(2)" loc = p61;
+net "data_inAdd(1)" loc = p62;
+net "data_inAdd(0)" loc = p66;
+
+//Dip sw
+net "data_inAdd(15)" loc = p112;
+net "data_inAdd(14)" loc = p111;
+net "data_inAdd(13)" loc = p105;
+net "data_inAdd(12)" loc = p104;
+net "data_inAdd(11)" loc = p102;
+net "data_inAdd(10)" loc = p101;
+net "data_inAdd(9)" loc = p100;
+net "data_inAdd(8)" loc = p99;
+
+
+// 7 Segment
+net "A" loc = p41;
+net "B" loc = p40;
+net "C" loc = p35;
+net "D" loc = p34;
+net "E" loc = p32;
+net "F" loc = p29;
+net "G" loc = p27;
+
+// 7 Segment Common
+net "com0" loc = p44;
+net "com1" loc = p43;
+net "com2" loc = p33;
+net "com3" loc = p30;
+
+//CLK 20 MHz
+net "clk20MHz" loc = p123;
+
+//Buzzer
+net "Buzzer" loc = p83;

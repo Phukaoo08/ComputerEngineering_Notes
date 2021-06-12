@@ -1,0 +1,188 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml adder_8bits.twx adder_8bits.ncd -o adder_8bits.twr
+adder_8bits.pcf -ucf adderPin.ucf
+
+Design file:              adder_8bits.ncd
+Physical constraint file: adder_8bits.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk20MHz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk20MHz       |    0.883|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+data_inAdd<0>  |A              |   12.810|
+data_inAdd<0>  |B              |   12.906|
+data_inAdd<0>  |Buzzer         |    9.805|
+data_inAdd<0>  |C              |   12.599|
+data_inAdd<0>  |D              |   12.850|
+data_inAdd<0>  |E              |   13.196|
+data_inAdd<0>  |F              |   12.473|
+data_inAdd<0>  |G              |   12.474|
+data_inAdd<1>  |A              |   12.738|
+data_inAdd<1>  |B              |   12.835|
+data_inAdd<1>  |Buzzer         |    9.717|
+data_inAdd<1>  |C              |   12.528|
+data_inAdd<1>  |D              |   12.779|
+data_inAdd<1>  |E              |   13.125|
+data_inAdd<1>  |F              |   12.402|
+data_inAdd<1>  |G              |   12.403|
+data_inAdd<2>  |A              |   12.672|
+data_inAdd<2>  |B              |   12.727|
+data_inAdd<2>  |Buzzer         |    9.651|
+data_inAdd<2>  |C              |   12.420|
+data_inAdd<2>  |D              |   12.671|
+data_inAdd<2>  |E              |   13.017|
+data_inAdd<2>  |F              |   12.294|
+data_inAdd<2>  |G              |   12.295|
+data_inAdd<3>  |A              |   12.219|
+data_inAdd<3>  |B              |   12.224|
+data_inAdd<3>  |Buzzer         |    9.198|
+data_inAdd<3>  |C              |   11.917|
+data_inAdd<3>  |D              |   12.168|
+data_inAdd<3>  |E              |   12.514|
+data_inAdd<3>  |F              |   11.791|
+data_inAdd<3>  |G              |   11.792|
+data_inAdd<4>  |A              |   12.502|
+data_inAdd<4>  |B              |   12.568|
+data_inAdd<4>  |Buzzer         |    9.559|
+data_inAdd<4>  |C              |   12.261|
+data_inAdd<4>  |D              |   12.512|
+data_inAdd<4>  |E              |   12.858|
+data_inAdd<4>  |F              |   12.135|
+data_inAdd<4>  |G              |   12.136|
+data_inAdd<5>  |A              |   12.124|
+data_inAdd<5>  |B              |   12.487|
+data_inAdd<5>  |Buzzer         |    9.484|
+data_inAdd<5>  |C              |   12.180|
+data_inAdd<5>  |D              |   12.431|
+data_inAdd<5>  |E              |   12.777|
+data_inAdd<5>  |F              |   12.054|
+data_inAdd<5>  |G              |   12.055|
+data_inAdd<6>  |A              |   12.268|
+data_inAdd<6>  |B              |   12.589|
+data_inAdd<6>  |Buzzer         |    9.582|
+data_inAdd<6>  |C              |   12.282|
+data_inAdd<6>  |D              |   12.533|
+data_inAdd<6>  |E              |   12.879|
+data_inAdd<6>  |F              |   12.156|
+data_inAdd<6>  |G              |   12.157|
+data_inAdd<7>  |A              |   11.753|
+data_inAdd<7>  |B              |   11.822|
+data_inAdd<7>  |Buzzer         |    9.065|
+data_inAdd<7>  |C              |   11.496|
+data_inAdd<7>  |D              |   11.614|
+data_inAdd<7>  |E              |   11.914|
+data_inAdd<7>  |F              |   10.974|
+data_inAdd<7>  |G              |   11.294|
+data_inAdd<8>  |A              |   14.119|
+data_inAdd<8>  |B              |   14.215|
+data_inAdd<8>  |Buzzer         |   11.114|
+data_inAdd<8>  |C              |   13.908|
+data_inAdd<8>  |D              |   14.159|
+data_inAdd<8>  |E              |   14.505|
+data_inAdd<8>  |F              |   13.782|
+data_inAdd<8>  |G              |   13.783|
+data_inAdd<9>  |A              |   13.610|
+data_inAdd<9>  |B              |   13.707|
+data_inAdd<9>  |Buzzer         |   10.589|
+data_inAdd<9>  |C              |   13.400|
+data_inAdd<9>  |D              |   13.651|
+data_inAdd<9>  |E              |   13.997|
+data_inAdd<9>  |F              |   13.274|
+data_inAdd<9>  |G              |   13.275|
+data_inAdd<10> |A              |   13.686|
+data_inAdd<10> |B              |   13.741|
+data_inAdd<10> |Buzzer         |   10.665|
+data_inAdd<10> |C              |   13.434|
+data_inAdd<10> |D              |   13.685|
+data_inAdd<10> |E              |   14.031|
+data_inAdd<10> |F              |   13.308|
+data_inAdd<10> |G              |   13.309|
+data_inAdd<11> |A              |   14.005|
+data_inAdd<11> |B              |   14.010|
+data_inAdd<11> |Buzzer         |   10.984|
+data_inAdd<11> |C              |   13.703|
+data_inAdd<11> |D              |   13.954|
+data_inAdd<11> |E              |   14.300|
+data_inAdd<11> |F              |   13.577|
+data_inAdd<11> |G              |   13.578|
+data_inAdd<12> |A              |   13.911|
+data_inAdd<12> |B              |   13.977|
+data_inAdd<12> |Buzzer         |   10.968|
+data_inAdd<12> |C              |   13.670|
+data_inAdd<12> |D              |   13.921|
+data_inAdd<12> |E              |   14.267|
+data_inAdd<12> |F              |   13.544|
+data_inAdd<12> |G              |   13.545|
+data_inAdd<13> |A              |   13.440|
+data_inAdd<13> |B              |   13.803|
+data_inAdd<13> |Buzzer         |   10.800|
+data_inAdd<13> |C              |   13.496|
+data_inAdd<13> |D              |   13.747|
+data_inAdd<13> |E              |   14.093|
+data_inAdd<13> |F              |   13.370|
+data_inAdd<13> |G              |   13.371|
+data_inAdd<14> |A              |   13.428|
+data_inAdd<14> |B              |   13.749|
+data_inAdd<14> |Buzzer         |   10.742|
+data_inAdd<14> |C              |   13.442|
+data_inAdd<14> |D              |   13.693|
+data_inAdd<14> |E              |   14.039|
+data_inAdd<14> |F              |   13.316|
+data_inAdd<14> |G              |   13.317|
+data_inAdd<15> |A              |   13.832|
+data_inAdd<15> |B              |   13.901|
+data_inAdd<15> |Buzzer         |   11.144|
+data_inAdd<15> |C              |   13.575|
+data_inAdd<15> |D              |   13.693|
+data_inAdd<15> |E              |   13.993|
+data_inAdd<15> |F              |   13.053|
+data_inAdd<15> |G              |   13.373|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Oct 29 15:46:04 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4572 MB
+
+
+

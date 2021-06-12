@@ -1,0 +1,19 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Nov 26 15:02:48 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "e" LOCATE = SITE "P32" LEVEL 1;
+COMP "f" LOCATE = SITE "P29" LEVEL 1;
+COMP "g" LOCATE = SITE "P27" LEVEL 1;
+COMP "SW" LOCATE = SITE "P51" LEVEL 1;
+COMP "Buzzer_alarm" LOCATE = SITE "P83" LEVEL 1;
+COMP "OSC_normal" LOCATE = SITE "P123" LEVEL 1;
+COMP "com0" LOCATE = SITE "P43" LEVEL 1;
+COMP "com1" LOCATE = SITE "P44" LEVEL 1;
+COMP "a" LOCATE = SITE "P41" LEVEL 1;
+COMP "b" LOCATE = SITE "P40" LEVEL 1;
+COMP "c" LOCATE = SITE "P35" LEVEL 1;
+COMP "d" LOCATE = SITE "P34" LEVEL 1;
+SCHEMATIC END;
+

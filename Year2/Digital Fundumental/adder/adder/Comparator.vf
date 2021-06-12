@@ -1,0 +1,70 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Comparator.vf
+// /___/   /\     Timestamp : 10/29/2020 15:45:33
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "D:/Computer Engineering/Year2/Digital Fundumental/adder/adder/Comparator.vf" -w "D:/Computer Engineering/Year2/Digital Fundumental/adder/adder/Comparator.sch"
+//Design Name: Comparator
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module NOR9_HXILINX_Comparator (O, I0, I1, I2, I3, I4, I5, I6, I7, I8);
+    
+
+   output O;
+
+   input I0;
+   input I1;
+   input I2;
+   input I3;
+   input I4;
+   input I5;
+   input I6;
+   input I7;
+   input I8;
+
+assign O = !(I0 || I1 || I2 || I3 || I4 || I5 || I6 || I7 || I8 );
+
+endmodule
+`timescale 1ns / 1ps
+
+module Comparator(data_inAdd, 
+                  To_Buzzer);
+
+    input [15:0] data_inAdd;
+   output To_Buzzer;
+   
+   wire [15:0] data_inAdd_DUMMY;
+   
+   assign data_inAdd_DUMMY[15:0] = data_inAdd[15:0];
+   (* HU_SET = "XLXI_7_1" *) 
+   NOR9_HXILINX_Comparator  XLXI_7 (.I0(data_inAdd_DUMMY[8]), 
+                                   .I1(data_inAdd_DUMMY[7]), 
+                                   .I2(data_inAdd_DUMMY[6]), 
+                                   .I3(data_inAdd_DUMMY[5]), 
+                                   .I4(data_inAdd_DUMMY[4]), 
+                                   .I5(data_inAdd_DUMMY[3]), 
+                                   .I6(data_inAdd_DUMMY[2]), 
+                                   .I7(data_inAdd_DUMMY[1]), 
+                                   .I8(data_inAdd_DUMMY[0]), 
+                                   .O(To_Buzzer));
+   GND  XLXI_8_0 (.G(data_inAdd_DUMMY[9]));
+   GND  XLXI_8_1 (.G(data_inAdd_DUMMY[10]));
+   GND  XLXI_8_2 (.G(data_inAdd_DUMMY[11]));
+   GND  XLXI_8_3 (.G(data_inAdd_DUMMY[12]));
+   GND  XLXI_8_4 (.G(data_inAdd_DUMMY[13]));
+   GND  XLXI_8_5 (.G(data_inAdd_DUMMY[14]));
+   GND  XLXI_8_6 (.G(data_inAdd_DUMMY[15]));
+endmodule

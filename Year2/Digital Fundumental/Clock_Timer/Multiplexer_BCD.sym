@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="Multiplexer_BCD">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2020-10-27T9:33:30</timestamp>
+    <pin polarity="Input" x="0" y="-1056" name="One_Hz" />
+    <pin polarity="Input" x="0" y="-992" name="Counter_Min1_Bit1" />
+    <pin polarity="Input" x="0" y="-928" name="Counter_Min1_Bit2" />
+    <pin polarity="Input" x="0" y="-864" name="Counter_Min1_Bit3" />
+    <pin polarity="Input" x="0" y="-800" name="Counter_Min1_Bit4" />
+    <pin polarity="Input" x="0" y="-736" name="Counter_Min2_Bit1" />
+    <pin polarity="Input" x="0" y="-672" name="Counter_Min2_Bit2" />
+    <pin polarity="Input" x="0" y="-608" name="Counter_Min2_Bit3" />
+    <pin polarity="Input" x="0" y="-544" name="Counter_Min2_Bit4" />
+    <pin polarity="Input" x="0" y="-480" name="Counter_Sec1_Bit1" />
+    <pin polarity="Input" x="0" y="-416" name="Counter_Sec1_Bit2" />
+    <pin polarity="Input" x="0" y="-352" name="Counter_Sec1_Bit3" />
+    <pin polarity="Input" x="0" y="-288" name="Counter_Sec1_Bit4" />
+    <pin polarity="Input" x="0" y="-224" name="Counter_Sec2_Bit1" />
+    <pin polarity="Input" x="0" y="-160" name="Counter_Sec2_Bit2" />
+    <pin polarity="Input" x="0" y="-96" name="Counter_Sec2_Bit3" />
+    <pin polarity="Input" x="0" y="-32" name="Counter_Sec2_Bit4" />
+    <pin polarity="Output" x="464" y="-1056" name="BCD_Min1" />
+    <pin polarity="Output" x="464" y="-720" name="BCD_Min2" />
+    <pin polarity="Output" x="464" y="-384" name="BCD_Sec1" />
+    <pin polarity="Output" x="464" y="-48" name="BCD_Sec2" />
+    <graph>
+        <rect width="336" x="64" y="-1088" height="1088" />
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="232" y="-1096" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1056" type="pin One_Hz" />
+        <line x2="0" y1="-1056" y2="-1056" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-992" type="pin Counter_Min1_Bit1" />
+        <line x2="0" y1="-992" y2="-992" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-928" type="pin Counter_Min1_Bit2" />
+        <line x2="0" y1="-928" y2="-928" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-864" type="pin Counter_Min1_Bit3" />
+        <line x2="0" y1="-864" y2="-864" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-800" type="pin Counter_Min1_Bit4" />
+        <line x2="0" y1="-800" y2="-800" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-736" type="pin Counter_Min2_Bit1" />
+        <line x2="0" y1="-736" y2="-736" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-672" type="pin Counter_Min2_Bit2" />
+        <line x2="0" y1="-672" y2="-672" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-608" type="pin Counter_Min2_Bit3" />
+        <line x2="0" y1="-608" y2="-608" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-544" type="pin Counter_Min2_Bit4" />
+        <line x2="0" y1="-544" y2="-544" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-480" type="pin Counter_Sec1_Bit1" />
+        <line x2="0" y1="-480" y2="-480" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-416" type="pin Counter_Sec1_Bit2" />
+        <line x2="0" y1="-416" y2="-416" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-352" type="pin Counter_Sec1_Bit3" />
+        <line x2="0" y1="-352" y2="-352" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-288" type="pin Counter_Sec1_Bit4" />
+        <line x2="0" y1="-288" y2="-288" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-224" type="pin Counter_Sec2_Bit1" />
+        <line x2="0" y1="-224" y2="-224" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-160" type="pin Counter_Sec2_Bit2" />
+        <line x2="0" y1="-160" y2="-160" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-96" type="pin Counter_Sec2_Bit3" />
+        <line x2="0" y1="-96" y2="-96" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin Counter_Sec2_Bit4" />
+        <line x2="0" y1="-32" y2="-32" x1="64" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="392" y="-1056" type="pin BCD_Min1" />
+        <line x2="464" y1="-1056" y2="-1056" x1="400" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="392" y="-720" type="pin BCD_Min2" />
+        <line x2="464" y1="-720" y2="-720" x1="400" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="392" y="-384" type="pin BCD_Sec1" />
+        <line x2="464" y1="-384" y2="-384" x1="400" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="392" y="-48" type="pin BCD_Sec2" />
+        <line x2="464" y1="-48" y2="-48" x1="400" />
+    </graph>
+</symbol>

@@ -1,0 +1,56 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Xor8bit.vf
+// /___/   /\     Timestamp : 11/04/2020 19:43:18
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog E:/digit_program/project/ALU/Xor8bit.vf -w E:/digit_program/project/ALU/Xor8bit.sch
+//Design Name: Xor8bit
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Xor8bit(A, 
+               B, 
+               out_put);
+
+    input [7:0] A;
+    input [7:0] B;
+   output [7:0] out_put;
+   
+   
+   XOR2  XLXI_3 (.I0(B[0]), 
+                .I1(A[0]), 
+                .O(out_put[0]));
+   XOR2  XLXI_4 (.I0(B[1]), 
+                .I1(A[1]), 
+                .O(out_put[1]));
+   XOR2  XLXI_5 (.I0(B[2]), 
+                .I1(A[2]), 
+                .O(out_put[2]));
+   XOR2  XLXI_6 (.I0(B[3]), 
+                .I1(A[3]), 
+                .O(out_put[3]));
+   XOR2  XLXI_7 (.I0(B[4]), 
+                .I1(A[4]), 
+                .O(out_put[4]));
+   XOR2  XLXI_8 (.I0(B[5]), 
+                .I1(A[5]), 
+                .O(out_put[5]));
+   XOR2  XLXI_9 (.I0(B[6]), 
+                .I1(A[6]), 
+                .O(out_put[6]));
+   XOR2  XLXI_10 (.I0(B[7]), 
+                 .I1(A[7]), 
+                 .O(out_put[7]));
+endmodule

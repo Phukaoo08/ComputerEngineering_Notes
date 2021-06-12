@@ -1,0 +1,74 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : select_button.vf
+// /___/   /\     Timestamp : 11/04/2020 19:43:18
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog E:/digit_program/project/ALU/select_button.vf -w E:/digit_program/project/ALU/select_button.sch
+//Design Name: select_button
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module CB2CE_HXILINX_select_button(CEO, Q0, Q1, TC, C, CE, CLR);
+   
+   localparam TERMINAL_COUNT = 2'b11;
+   
+   output             CEO;
+   output             Q0;
+   output             Q1;
+   output             TC;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg                Q0;
+   reg                Q1;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  {Q1, Q0} <= 2'b00;
+	else if (CE)
+	  {Q1,Q0} <= {Q1,Q0} + 1;
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = ({Q1,Q0} == TERMINAL_COUNT);
+   
+endmodule
+`timescale 1ns / 1ps
+
+module select_button(Select_SW, 
+                     D0, 
+                     D1);
+
+    input Select_SW;
+   output D0;
+   output D1;
+   
+   wire XLXN_8;
+   wire XLXN_10;
+   
+   (* HU_SET = "XLXI_7_23" *) 
+   CB2CE_HXILINX_select_button  XLXI_7 (.C(Select_SW), 
+                                       .CE(XLXN_10), 
+                                       .CLR(XLXN_8), 
+                                       .CEO(), 
+                                       .Q0(D0), 
+                                       .Q1(D1), 
+                                       .TC());
+   GND  XLXI_8 (.G(XLXN_8));
+   VCC  XLXI_9 (.P(XLXN_10));
+endmodule

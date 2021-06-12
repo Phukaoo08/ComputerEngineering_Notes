@@ -1,0 +1,3 @@
+
+NET "IN_IKUY" LOC = P55;
+NET "OUT1" LOC = P24;

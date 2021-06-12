@@ -1,0 +1,78 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Compare_divide2.vf
+// /___/   /\     Timestamp : 11/26/2020 14:46:32
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "D:/Computer Engineering/Year2/Digital Fundumental/Dice_Random_Digital/Compare_divide2.vf" -w "D:/Computer Engineering/Year2/Digital Fundumental/Dice_Random_Digital/Compare_divide2.sch"
+//Design Name: Compare_divide2
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module OR7_HXILINX_Compare_divide2 (O, I0, I1, I2, I3, I4, I5, I6);
+    
+
+   output O;
+
+   input I0;
+   input I1;
+   input I2;
+   input I3;
+   input I4;
+   input I5;
+   input I6;
+
+assign O = (I0 || I1 || I2 || I3 || I4 || I5 || I6);
+
+endmodule
+`timescale 1ns / 1ps
+
+module Compare_divide2(Count1_Bit1, 
+                       Count1_Bit2, 
+                       Count1_Bit3, 
+                       Count1_Bit4, 
+                       Count2_Bit1, 
+                       Count2_Bit2, 
+                       Count2_Bit3, 
+                       Count2_Bit4, 
+                       TO_BUZZER);
+
+    input Count1_Bit1;
+    input Count1_Bit2;
+    input Count1_Bit3;
+    input Count1_Bit4;
+    input Count2_Bit1;
+    input Count2_Bit2;
+    input Count2_Bit3;
+    input Count2_Bit4;
+   output TO_BUZZER;
+   
+   wire XLXN_17;
+   wire XLXN_21;
+   
+   AND2  XLXI_9 (.I0(XLXN_21), 
+                .I1(XLXN_17), 
+                .O(TO_BUZZER));
+   (* HU_SET = "XLXI_10_0" *) 
+   OR7_HXILINX_Compare_divide2  XLXI_10 (.I0(Count2_Bit4), 
+                                        .I1(Count2_Bit3), 
+                                        .I2(Count2_Bit2), 
+                                        .I3(Count2_Bit1), 
+                                        .I4(Count1_Bit4), 
+                                        .I5(Count1_Bit3), 
+                                        .I6(Count1_Bit2), 
+                                        .O(XLXN_21));
+   INV  XLXI_11 (.I(Count1_Bit1), 
+                .O(XLXN_17));
+endmodule

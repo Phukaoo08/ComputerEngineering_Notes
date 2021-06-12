@@ -1,0 +1,61 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : shifter_8bit.vf
+// /___/   /\     Timestamp : 11/04/2020 19:43:18
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog E:/digit_program/project/ALU/shifter_8bit.vf -w E:/digit_program/project/ALU/shifter_8bit.sch
+//Design Name: shifter_8bit
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module INV8_HXILINX_shifter_8bit (O, I);
+    
+
+   output [7:0] O;
+
+   input  [7:0] I;
+
+assign O = ~I;
+endmodule
+`timescale 1ns / 1ps
+
+module shifter_8bit(data_in, 
+                    result);
+
+    input [7:0] data_in;
+   output [7:0] result;
+   
+   wire [7:0] out_put;
+   
+   (* HU_SET = "XLXI_1_24" *) 
+   INV8_HXILINX_shifter_8bit  XLXI_1 (.I(data_in[7:0]), 
+                                     .O(out_put[7:0]));
+   GND  XLXI_2 (.G(out_put[7]));
+   INV  XLXI_3_0 (.I(out_put[0]), 
+                 .O(result[1]));
+   INV  XLXI_3_1 (.I(out_put[1]), 
+                 .O(result[2]));
+   INV  XLXI_3_2 (.I(out_put[2]), 
+                 .O(result[3]));
+   INV  XLXI_3_3 (.I(out_put[3]), 
+                 .O(result[4]));
+   INV  XLXI_3_4 (.I(out_put[4]), 
+                 .O(result[5]));
+   INV  XLXI_3_5 (.I(out_put[5]), 
+                 .O(result[6]));
+   INV  XLXI_3_6 (.I(out_put[6]), 
+                 .O(result[7]));
+   GND  XLXI_4 (.G(result[0]));
+endmodule
